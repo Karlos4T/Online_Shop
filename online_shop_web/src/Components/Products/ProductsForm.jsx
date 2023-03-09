@@ -17,6 +17,7 @@ export function ProductsForm(){
                         <input className="w-auto" type="file" name="image" id=""/>
                         <input className="w-auto" type="number" name="price" id="" placeholder="€"/>
                     </div>
+                    <input type="submit"/>
                 </form>
             </div>
         </div>

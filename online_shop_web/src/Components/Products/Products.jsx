@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react"
+import { getProducts } from "../../api";
 import { Menu } from "../Menu";
-import { Product } from "./Product";
+import { ProductCard } from "./ProductCard";
 
 
 
 export function Products(){
-    const data = ["perro", "gato", "pez"];
+    //const data = ["perro", "gato", "pez"];
     const [products, setProducts] = useState([]);
 
-    function handleData(){
+    async function handleData(){
+        const data = await getProducts();
+        //console.log(datas);
         setProducts(data);
     }
 
@@ -22,14 +25,15 @@ export function Products(){
             <Menu></Menu>
             <h1>PRODUCTS</h1>
             <a className="btn btn-success" href="./editproducts">Edit Products</a>
-            {console.log(products)}
-            {products.map((item, i) => {
+            <div className="d-flex justify-content-between container">
+                {products.map((item, i) => {
                 return(
-                    <Product
+                    <ProductCard
                     key={i}
                     props={item}/>
-                )
-            })}
+                    )
+                })}
+            </div>
         </div>
     )
 }
