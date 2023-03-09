@@ -1,0 +1,19 @@
+@path = http://localhost:4000
+
+GET {{path}}/products
+
+###
+
+POST {{path}}/products
+Content-Type: application/json
+
+{
+    "title" : "producto 1",
+    "desc" : "Descripcion de producto 1",
+    "img_path" : "path de la imagen",
+    "images": "[imagen 1]",
+    "price" : 3,
+    "collection" : 1
+}
+
+###
