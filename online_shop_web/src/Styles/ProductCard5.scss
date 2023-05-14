@@ -1,0 +1,33 @@
+/* Container box to set the sides relative to */
+.cube {
+	height: 300px;
+
+	-webkit-transition: -webkit-transform .5s;
+	transition: transform .5s; /* Animate the transform properties */
+
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d; /* <-NB */
+}
+
+.flippety {
+	-webkit-transform: translateZ(100px);
+	transform: translateZ(100px);
+}
+
+.flop {
+	-webkit-transform: rotateX(-90deg) translateZ(-100px);
+	transform: rotateX(-90deg) translateZ(-100px);
+}
+
+/* Rotate the cube */
+.cube:hover {
+	-webkit-transform: rotateX(90deg);
+	transform: rotateX(90deg); /* Text bleed at 90º */
+}
+
+.cube a:hover{
+	cursor: pointer;
+	background-color: rgba(128, 128, 128, 0.436);
+	font-size: 3rem;
+	transition-duration: .2s;
+}

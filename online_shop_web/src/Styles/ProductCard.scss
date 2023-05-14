@@ -1,4 +1,34 @@
-.card{
-    width: 15rem;
-    background-color: aqua;
+$primary-color: green;
+$second-color: red;
+
+
+.item{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.gradient{
+    position: absolute;
+    z-index: 0;
+}
+
+.item .top{
+    position: relative;
+}
+
+.item:hover img{
+    transform: scale(110%);
+    filter: drop-shadow(0px 10px 8px rgb(150, 150, 150));
+    transition: .5s;
+}
+
+.item img {
+    width: 80%;
+}
+
+.item .bottom{
+    border-radius: 0 20px 20px 20px ;
+    position: relative;
 }

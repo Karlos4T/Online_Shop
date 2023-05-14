@@ -1,0 +1,19 @@
+.product-card-2{
+    border-radius: 40px;
+}
+
+.product-card-2{
+    text-decoration: none;
+    background: rgb(225, 225, 225);
+    border-radius: 16px;
+    height: 170px;
+}
+
+.product-card-2 img{
+    transition: .5s;
+}
+
+.product-card-2:hover img{
+    transform: scale(150%) rotateZ(20deg) translateY(-10px);
+    transition: .5s;
+}

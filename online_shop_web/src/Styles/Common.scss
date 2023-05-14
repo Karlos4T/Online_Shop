@@ -1,0 +1,69 @@
+$main-color : #EF8354; //mid blue
+$second-color : #2D3142; //red
+$third-color : #4F5D75; //white
+$fourth-color : #BFC0C0; //light blue
+$fith-color : #FFFFFF; //dark blue
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.font-main{
+    color: $main-color;
+}
+
+.font-second{
+    color: $second-color;
+}
+
+.font-third{
+    color: $third-color;
+}
+
+.font-fourth{
+    color: $fourth-color;
+}
+
+.font-fith{
+    color: $fith-color;
+}
+
+.border-main{
+    border: 1px solid $main-color;
+}
+
+.border-second{
+    border: 1px solid $second-color;
+}
+
+.border-third{
+    border: 1px solid $third-color;
+}
+
+.border-fourth{
+    border: 1px solid $fourth-color;
+}
+
+.border-fith{
+    border: 1px solid $fith-color;
+}
+
+.bg-main{
+    background-color: $main-color;
+}
+
+.bg-second{
+    background-color: $second-color;
+}
+
+.bg-third{
+    background-color: $third-color;
+}
+
+.bg-fourth{
+    background-color: $fourth-color;
+}
+
+.bg-fith{
+    background-color: $fith-color;
+}

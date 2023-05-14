@@ -1,0 +1,8 @@
+.products-waterfall{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.products-waterfall::-webkit-scrollbar{
+    visibility: hidden;
+}

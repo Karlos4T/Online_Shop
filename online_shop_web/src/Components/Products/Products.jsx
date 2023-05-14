@@ -1,38 +1,21 @@
-import { useEffect, useState } from "react"
-import { getProducts } from "../../api";
-import { Menu } from "../Menu";
-import { ProductCard } from "./ProductCard";
+import { ProductCard4 } from "./Cards/ProductCard4";
 
-
-
-export function Products(){
-    //const data = ["perro", "gato", "pez"];
-    const [products, setProducts] = useState([]);
-
-    async function handleData(){
-        const data = await getProducts();
-        //console.log(datas);
-        setProducts(data);
-    }
-
-    useEffect(() => {
-        handleData();
-    }, [])
-
-
+export function Products({products}){
+    
     return(
         <div>
-            <Menu></Menu>
+            <div style={{height: '10vh'}}></div>
             <h1>PRODUCTS</h1>
             <a className="btn btn-success" href="./editproducts">Edit Products</a>
-            <div className="d-flex justify-content-between container">
+            <div className="w-100 d-flex flex-wrap p-3 justify-content-start container-fluid">
                 {products.map((item, i) => {
-                return(
-                    <ProductCard
-                    key={i}
-                    props={item}/>
-                    )
-                })}
+                    return(
+                        <ProductCard4
+                            key={i}
+                            props={item}/>
+                        )
+                    }
+                )}
             </div>
         </div>
     )
